@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="medaxilPanel" prefHeight="675.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hicaz.Controllers.MedaxilController">
+   <children>
+      <TableView fx:id="medaxilView" layoutX="14.0" layoutY="116.0" onKeyPressed="#handleKeyPressed" onMouseClicked="#handleClick" prefHeight="514.0" prefWidth="699.0">
+        <columns>
+          <TableColumn fx:id="Nr" prefWidth="75.0" text="Nr" />
+          <TableColumn fx:id="Tarix" prefWidth="208.0" text="Tarix" />
+            <TableColumn fx:id="Kreditor" prefWidth="208.0" text="Kreditor" />
+            <TableColumn fx:id="Mebleg" prefWidth="205.5" text="Mebleg" />
+        </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="266.0" layoutY="70.0" onKeyReleased="#handleKeyReleased" prefHeight="26.0" prefWidth="162.0" promptText="Kreditor Adı" />
+      <DatePicker fx:id="endDatePicker" layoutX="107.0" layoutY="70.0" prefHeight="26.0" prefWidth="123.0" promptText="Son Tarix" />
+      <DatePicker fx:id="startDatePicker" layoutX="107.0" layoutY="18.0" prefHeight="26.0" prefWidth="123.0" promptText="Başlanğıc Tarix" />
+      <Button layoutX="601.0" layoutY="17.0" mnemonicParsing="false" onAction="#createNewMedaxil" stylesheets="@css/button.css" text="Yeni Mədaxil" />
+      <ToggleButton fx:id="toggleButton" layoutX="451.0" layoutY="70.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="119.0" stylesheets="@css/button.css" text="Bu günki Mədaxil" textFill="#f7ff82" />
+      <Button fx:id="printButton" layoutX="26.0" layoutY="66.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="61.0" stylesheets="@css/button.css" text="Print"  onAction="#handlePrintButtonAction"/>
+   </children>
+</AnchorPane>

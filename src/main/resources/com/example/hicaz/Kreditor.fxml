@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="kreditorPane" prefHeight="675.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hicaz.Controllers.KreditorController">
+   <children>
+      <TableView fx:id="kreditorTableView" onMouseClicked="#handleClick" layoutX="19.0" layoutY="113.0" prefHeight="449.0" prefWidth="410.0">
+        <columns>
+          <TableColumn fx:id="nr" prefWidth="75.0" text="Nr" />
+          <TableColumn fx:id="name" prefWidth="334.00000762939453" text="Kreditor" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchBar" layoutX="141.0" layoutY="83.0" promptText="Kreditor Adı"  onKeyReleased="#handleKeyReleased"/>
+      <Button layoutX="544.0" layoutY="40.0" mnemonicParsing="false" stylesheets="@css/button.css" text="Yeni Kreditor" onAction="#createNewKreditor" />
+      <Label layoutX="272.0" layoutY="11.0" prefHeight="57.0" prefWidth="228.0" text="Kreditor">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

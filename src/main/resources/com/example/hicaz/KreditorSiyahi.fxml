@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hicaz.Controllers.KreditorSechimiDialog">
+    <children>
+        <TableView fx:id="KreditorSiyahiTableView" layoutX="29.0" layoutY="60.0" prefHeight="314.0" prefWidth="384.0">
+            <columns>
+                <TableColumn fx:id="nr" prefWidth="102.0" text="Nr" />
+                <TableColumn fx:id="name" prefWidth="281.0" text="Kreditor " />
+            </columns>
+        </TableView>
+        <TextField fx:id="search" layoutX="149.0" layoutY="28.0" prefHeight="26.0" prefWidth="126.0" promptText="Kreditor " onKeyReleased="#handleKeyReleased"/>
+    </children>
+</AnchorPane>

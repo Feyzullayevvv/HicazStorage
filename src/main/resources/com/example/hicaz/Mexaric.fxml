@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mexaricPanel" onKeyPressed="#handleKeyPressed" prefHeight="675.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hicaz.Controllers.MexaricController">
+    <children>
+        <TableView fx:id="mexaricView" layoutX="14.0" layoutY="116.0" onMouseClicked="#handleClick" prefHeight="514.0" prefWidth="699.0">
+            <columns>
+                <TableColumn fx:id="Nr" prefWidth="132.5427074432373" text="Nr" />
+                <TableColumn fx:id="Tarix" prefWidth="273.4573287963867" text="Tarix" />
+                <TableColumn fx:id="TehvilAlan" prefWidth="292.0147399902344" text="Təhvil alan" />
+            </columns>
+        </TableView>
+        <TextField fx:id="search" layoutX="441.0" layoutY="84.0" onKeyReleased="#handleKeyReleased" prefHeight="26.0" prefWidth="263.0" promptText="Təhvil Alan" />
+        <DatePicker fx:id="endDatePicker" layoutX="115.0" layoutY="71.0" prefHeight="26.0" prefWidth="123.0" promptText="Son Tarix" />
+        <DatePicker fx:id="startDatePicker" layoutX="115.0" layoutY="30.0" prefHeight="26.0" prefWidth="123.0" promptText="Başlanğıc Tarix" />
+        <Button layoutX="601.0" layoutY="17.0" mnemonicParsing="false" onAction="#createNewMexaric" stylesheets="@css/button.css" text="Yeni Məxaric" />
+        <ToggleButton fx:id="toggleButton" layoutX="268.0" layoutY="30.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="127.0" stylesheets="@css/button.css" text="Bu günki Məxaric" textFill="#f7ff82" />
+        <Button fx:id="printButton" layoutX="26.0" layoutY="66.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="61.0" stylesheets="@css/button.css" text="Print"  onAction="#handlePrintButtonAction"/>
+    </children>
+</AnchorPane>

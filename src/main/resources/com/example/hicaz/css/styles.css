@@ -1,0 +1,66 @@
+@keyframes shake {
+    0%, 100% {
+        -fx-translate-x: 0;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -fx-translate-x: -10px;
+    }
+    20%, 40%, 60%, 80% {
+        -fx-translate-x: 10px;
+    }
+}
+
+.shake {
+    -fx-animation-name: shake;
+    -fx-animation-duration: 0.4s;
+}
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1:#1976D2;
+}
+
+.text-field {
+     -fx-background-color: transparent;
+         -fx-text-fill: -fx-primary;
+         -fx-font-size: 12pt;
+         -jfx-focus-color: -fx-secondary;
+         -fx-text-fill: derive(-fx-primarytext, 20%);
+         -fx-border-width: 0 0 1 0;
+         -fx-border-color: -fx-primary;
+         -fx-prompt-text-fill: -fx-primarytext;
+}
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12pt;
+}
+.text-field:focused{
+-fx-background-color: transparent;
+         -fx-text-fill: -fx-primary;
+         -fx-font-size: 12pt;
+         -jfx-focus-color: -fx-secondary;
+         -fx-text-fill: derive(-fx-primarytext, 20%);
+         -fx-border-width: 0 0 1 0;
+         -fx-border-color: -fx-secondary;
+         -fx-prompt-text-fill: -fx-primarytext;
+}
+.button:hover, .button:focused{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+.glyph-icon
+{
+    -fx-fill: -fx-primarytext;
+}
+
+
+
+

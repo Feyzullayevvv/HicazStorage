@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="297.0" style="-fx-background-color: #290903;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hicaz.Controllers.NewKreditorController">
+    <children>
+        <ImageView fitHeight="297.0" fitWidth="323.0" opacity="0.43" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/login.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="20.0" layoutY="38.0" prefHeight="18.0" prefWidth="89.0" text="Kreditor" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font></Label>
+        <TextField fx:id="kreditorName" layoutX="97.0" layoutY="38.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+.button {
+    -fx-background-color: #2D3347; /* Charming background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-border-radius: 20px;
+         -fx-background-radius: 20px;
+    -fx-cursor: hand; /* Cursor style */
+}
+
+.button:hover {
+    -fx-background-color: #6886f6; /* Background color on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #000000; /* Background color when pressed */
+}
+
+.toggle-button {
+    -fx-background-color: #000000; /* Charming background color */
+    -fx-text-fill: #FFFF8D; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand; /* Cursor style */
+}
+
+.toggle-button:hover {
+    -fx-background-color: #6886f6; /* Background color on hover */
+}
+
+.toggle-button:selected {
+    -fx-background-color: #f50a0a; /* Background color when selected */
+}
+

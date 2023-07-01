@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newMalPane" prefHeight="675.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hicaz.Controllers.NewMalController">
+   <children>
+      <TableView fx:id="newMalTableView" layoutX="366.0" layoutY="155.0" prefHeight="277.0" prefWidth="346.0">
+        <columns>
+          <TableColumn fx:id="malName" prefWidth="98.65585327148438" text="Mal Adı" />
+          <TableColumn fx:id="malVahid" prefWidth="117.77194213867188" text="Vahid" />
+            <TableColumn fx:id="malOrtaGiymet" prefWidth="127.22805786132812" text="Orta Qiymıt" />
+        </columns>
+      </TableView>
+      <GridPane hgap="10.0" layoutX="25.0" layoutY="181.0" prefWidth="320.0" vgap="20.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="26.0" minHeight="1.0" prefHeight="22.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Mal adı">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Qiymət" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="malAdiTextField" GridPane.rowIndex="1" />
+            <TextField fx:id="vahidTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="ortaQiymetTextField" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="Vahid" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="159.0" layoutY="338.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" stylesheets="@css/button.css" text="Əlavə Et" GridPane.columnIndex="1" onAction="#onElaveEtClicked">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" stylesheets="@css/button.css" text="Sil" onAction="#handleDelete">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+      <Button layoutX="37.0" layoutY="614.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="28.0" prefWidth="75.0" stylesheets="@css/button.css" text="Geri"/>
+      <Button fx:id="bitirButton" layoutX="632.0" layoutY="611.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="65.0" stylesheets="@css/button.css" text="Bitir" onAction="#handleBitti" />
+   </children>
+</AnchorPane>
