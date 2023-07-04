@@ -138,6 +138,19 @@ public class MainController {
         }
     }
 
+    public void createDashBoard(){
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/hicaz/dashboard.fxml"));
+            Pane = loader.load();
+            setNode(Pane);
+        }catch (Exception e){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText("Xəta");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+        }
+    }
+
 
 
 

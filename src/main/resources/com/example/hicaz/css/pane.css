@@ -1,0 +1,8 @@
+.rounded-pane {
+    -fx-background-color: #9ad9f3;
+       -fx-border-width: 2px;
+       -fx-border-radius: 16px;
+       -fx-background-radius: 16px;
+       -fx-border-style: solid;
+       -fx-border-color: #9ad9f3;
+}
