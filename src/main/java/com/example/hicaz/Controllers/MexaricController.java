@@ -58,6 +58,8 @@ public class MexaricController implements Initializable {
     private DatePicker endDatePicker;
     @FXML
     private ToggleButton toggleButton;
+    @FXML
+    private Button printButton;
     private SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd");
 
     private AnchorPane Pane;
